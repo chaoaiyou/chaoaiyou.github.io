@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e0f2f7; /* Light Blue */
+}
+
+header {
+    background: #81d4fa;
+    color: #ff69b4;
+    padding: 20px 0;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 3em;
+    font-family: 'Lovers Quarrel', cursive;
+}
+
+nav {
+    margin: 20px 0;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+footer {
+    background: #81d4fa; /* Light Blue */
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+#progress-container {
+    width: 200px; /* Adjust the width to match the text length */
+    background-color: #b3e5fc; /* Lighter Blue */
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 20px auto 40px; /* Center the progress bar and add margin to the bottom */
+    position: relative;
+    height: 20px;
+}
+
+#progress-bar {
+    height: 100%;
+    background-color: #ff69b4; 
+    width: 0;
+    transition: width 1s;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#progress-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 20px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    padding-top: 2px; /* Adjust padding to vertically center the text */
+}
+
+#st-petersburg {
+    display: block;
+    margin: 20px auto;
+    max-width: 25%; /* Adjust the width to 1/4 of its original size */
+    height: auto;
+    border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    nav a {
+        margin: 0 10px;
+    }
+
+    #progress-container {
+        width: 100%; /* Make the progress bar responsive */
+    }
+}
